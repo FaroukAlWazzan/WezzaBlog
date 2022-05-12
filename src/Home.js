@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
+import useFetch from "./useFetch";
 
 const Home = () => {
     // const [name, setName] = useState('mario');
@@ -8,7 +9,6 @@ const Home = () => {
     //     setName('luigi');
     //     setAge(29);
     // }
-    const [blogs, setBlogs] = useState(null)
 
     // const [name, setName] = useState('mario')
     // const handleDelete = (id) => {
@@ -16,22 +16,15 @@ const Home = () => {
     //     setBlogs(newBlogs);
     // }
 
-    useEffect(() => {
-        fetch('http://localhost:8000/blogs')
-            .then((res) => {
-                return res.json();;
-            })
-            .then(data => {
-                console.log(data);
-                setBlogs(data);
-            })
-    }, [])
+    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
 
     // const handleClickAgain = (name, e) => {
     //     console.log('Hi ' + name, e.target);
     // }
     return (
         <div className="home">
+            {error && <div>{error}</div>}
+            {isPending && <div>Loading...</div>}
             {blogs && <BlogList blogs={blogs} title="all blogs" />}
             {/* <h2>Homepage</h2> */}
             {/* <p>{name} is {age} years old</p> */}

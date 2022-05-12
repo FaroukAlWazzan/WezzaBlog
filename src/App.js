@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const title = 'Welcome to the blog';
@@ -9,7 +10,11 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="content">
-        <Home />
+        <Switch>
+          <Route path='/'>
+            <home />
+          </Route>
+        </Switch>
       </div>
     </div>
   );
