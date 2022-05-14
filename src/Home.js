@@ -24,7 +24,7 @@ const Home = () => {
         <div className="home">
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            {blogs && <BlogList blogs={blogs} title="all blogs" />}
+            {blogs && <BlogList blogs={blogs} />}
             {/* <h2>Homepage</h2> */}
             {/* <p>{name} is {age} years old</p> */}
             {/* <button onClick={() => setName('luigi')}>Click me</button> */}

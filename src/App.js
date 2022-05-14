@@ -21,8 +21,8 @@ function App() {
             <Route path="/create" element={<Create />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/redir" element={<Navigate to="/create" />} />
-            <Route path="/checkout" element={cartIsEmpty ? <Navigate to="create" /> : <p>This is your checkout</p>} />
+            <Route path="/redir" element={<Navigate to="/" />} />
+            <Route path="/checkout" element={cartIsEmpty ? <Navigate to="blogs" /> : <p>This is your checkout</p>} />
           </Routes>
         </div>
       </div>
