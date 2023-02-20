@@ -43,7 +43,7 @@ const Create = () => {
         {/* the next is for nested routes.  And in app.js we make the parent path like this '/about/*'  */}
         {/* <Routes>
                     <Route path="offers" element={<Offers />} />
-                </Routes> */}
+        </Routes> */}
       </form>
     </div>
   );
