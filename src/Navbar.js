@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
+
   return (
     <nav className="navbar">
       <h1>The Wezza Blog</h1>
@@ -10,6 +12,7 @@ const Navbar = () => {
       </div>
     </nav>
   );
+
 }
 
 export default Navbar;

@@ -5,11 +5,13 @@ const BlogDetails = () => {
     const { id } = useParams();
     const { data, isPending, error } = useFetch('http://localhost:8000/blogs/' + id);
     const navigate = useNavigate();
+
     const handleDelete = () => {
         fetch('http://localhost:8000/blogs/' + id, { method: 'DELETE' }).then(() => {
             navigate('/')
         })
     }
+    
     return (
         <div className="blog-details">
             {isPending && <div>Loading...</div>}
