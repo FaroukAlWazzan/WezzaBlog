@@ -18,7 +18,6 @@ const Create = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(blog)
     }).then(() => {
-      // console.log('new one added');
       setIsPending(false);
       navigate('/');
     })
@@ -38,12 +37,14 @@ const Create = () => {
         </select>
         {!isPending && <button>Add Blog</button>}
         {isPending && <button disabled>Adding Blog...</button>}
+
         {/* <p>{author}</p> */}
         {/* <button onClick={() => navigate('/blogs/1')}>redirect to the first blog</button> */}
         {/* the next is for nested routes.  And in app.js we make the parent path like this '/about/*'  */}
         {/* <Routes>
                     <Route path="offers" element={<Offers />} />
         </Routes> */}
+
       </form>
     </div>
   );
