@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* base styles */
+/* base styles for all components */
 * {
   margin: 0;
   font-family: "Quicksand";
@@ -41,6 +41,7 @@
 }
 
 /* blogs list page */
+
 .blog-preview {
   text-align: center;
   padding: 10px 16px;
@@ -83,6 +84,7 @@
 }
 
 /* creating new blog form */
+
 .create {
   max-width: 400px;
   margin: 0 auto;
