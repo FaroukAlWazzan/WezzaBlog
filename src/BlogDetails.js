@@ -14,6 +14,7 @@ const BlogDetails = () => {
 
   return (
     <div className="blog-details">
+
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {data && (
@@ -24,6 +25,7 @@ const BlogDetails = () => {
           <button onClick={handleDelete}>Delete</button>
         </article>
       )}
+
     </div>
   );
 }
