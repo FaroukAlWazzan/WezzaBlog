@@ -11,6 +11,7 @@ const BlogDetails = () => {
       navigate('/')
     })
   }
+  
 
   return (
     <div className="blog-details">
