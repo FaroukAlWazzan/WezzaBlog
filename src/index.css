@@ -1,3 +1,4 @@
+/* the following for QuickSand font library */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* base styles for all components */
@@ -23,6 +24,7 @@
 
 .navbar .links {
   margin-left: auto;
+  margin-right: 0;
 }
 
 .navbar a {
