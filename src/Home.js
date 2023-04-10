@@ -2,6 +2,8 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
+    // commented after passing them below
+    
     // const [name, setName] = useState('mario');
     // const [age, setAge] = useState(25);
     // const handleClick = () => {

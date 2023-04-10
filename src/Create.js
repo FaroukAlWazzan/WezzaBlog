@@ -13,6 +13,7 @@ const Create = () => {
     e.preventDefault();
     setIsPending(true);
     const blog = { title, body, author };
+    // fetching the blogs with get request
     fetch('http://localhost:8000/blogs', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
