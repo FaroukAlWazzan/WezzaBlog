@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
     // commented after passing them below
-    
+
     // const [name, setName] = useState('mario');
     // const [age, setAge] = useState(25);
     // const handleClick = () => {
@@ -19,9 +19,11 @@ const Home = () => {
 
     const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
 
+    // function for handling user input
     // const handleClickAgain = (name, e) => {
     //     console.log('Hi ' + name, e.target);
     // }
+
     return (
         <div className="home">
             {error && <div>{error}</div>}
