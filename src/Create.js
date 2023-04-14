@@ -36,10 +36,10 @@ const Create = () => {
           <option value="jack">Jack</option>
           <option value="ihsan">Ihsan</option>
         </select>
-        {/* If not loading */}
+        {/* If no submitted and not loading */}
         {!isPending && <button>Add Blog</button>}
 
-        {/* If loading */}
+        {/* If submitted and loading loading */}
         {isPending && <button disabled>Adding Blog...</button>}
 
         {/* <p>{author}</p> */}
