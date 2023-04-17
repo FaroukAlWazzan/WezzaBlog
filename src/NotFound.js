@@ -1,3 +1,4 @@
+// the 404 not found page component
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
