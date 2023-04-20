@@ -23,6 +23,7 @@ const Home = () => {
     // const handleClickAgain = (name, e) => {
     //     console.log('Hi ' + name, e.target);
     // }
+    
 
     return (
         <div className="home">
