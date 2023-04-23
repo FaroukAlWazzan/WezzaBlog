@@ -13,7 +13,7 @@ const Create = () => {
     e.preventDefault();
     setIsPending(true);
     const blog = { title, body, author };
-    // fetching the blogs with get request
+
     fetch('http://localhost:8000/blogs', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -23,7 +23,7 @@ const Create = () => {
       navigate('/');
     })
   }
-  
+
   return (
     <div className="create">
       <h2>Add a New Blog</h2>
