@@ -2,7 +2,7 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-    // commented after passing them below
+    // commented after passing the state below using custom hooks
 
     // const [name, setName] = useState('mario');
     // const [age, setAge] = useState(25);
@@ -23,7 +23,7 @@ const Home = () => {
     // const handleClickAgain = (name, e) => {
     //     console.log('Hi ' + name, e.target);
     // }
-    
+
 
     return (
         <div className="home">
