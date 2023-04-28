@@ -16,6 +16,7 @@ const Home = () => {
     //     const newBlogs = blogs.filter((blog) => blog.id !== id);
     //     setBlogs(newBlogs);
     // }
+    
 
     const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
 

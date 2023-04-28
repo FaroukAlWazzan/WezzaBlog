@@ -9,6 +9,7 @@ const Create = () => {
   const [isPending, setIsPending] = useState(false);
   const navigate = useNavigate();
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsPending(true);
@@ -23,6 +24,7 @@ const Create = () => {
       navigate('/');
     })
   }
+  
 
   return (
     <div className="create">
