@@ -6,6 +6,7 @@ const BlogDetails = () => {
   const { data, isPending, error } = useFetch('http://localhost:8000/blogs/' + id);
   const navigate = useNavigate();
 
+  // when ddeleting a blog post call delete function
   const handleDelete = () => {
     fetch('http://localhost:8000/blogs/' + id, { method: 'DELETE' }).then(() => {
       navigate('/');
