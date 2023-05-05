@@ -16,7 +16,7 @@ const Home = () => {
     //     const newBlogs = blogs.filter((blog) => blog.id !== id);
     //     setBlogs(newBlogs);
     // }
-    
+
 
     const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
 
@@ -31,6 +31,8 @@ const Home = () => {
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
             {blogs && <BlogList blogs={blogs} />}
+
+            {/* old component before putting in a separate component */}
             {/* <h2>Homepage</h2> */}
             {/* <p>{name} is {age} years old</p> */}
             {/* <button onClick={() => setName('luigi')}>Click me</button> */}

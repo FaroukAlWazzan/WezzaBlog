@@ -24,7 +24,7 @@ const Create = () => {
       navigate('/');
     })
   }
-  
+
 
   return (
     <div className="create">
@@ -39,6 +39,7 @@ const Create = () => {
           <option value="jack">Jack</option>
           <option value="ihsan">Ihsan</option>
         </select>
+        
         {/* If no submitted and not loading */}
         {!isPending && <button>Add Blog</button>}
 
