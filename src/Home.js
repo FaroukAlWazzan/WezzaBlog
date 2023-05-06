@@ -21,6 +21,7 @@ const Home = () => {
     const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
 
     // function for handling user input
+
     // const handleClickAgain = (name, e) => {
     //     console.log('Hi ' + name, e.target);
     // }
