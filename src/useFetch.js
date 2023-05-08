@@ -9,6 +9,7 @@ const useFetch = (url) => {
   useEffect(() => {
     const abortCont = new AbortController();
 
+    // should refactor later to use axios library
     fetch(url, { signal: abortCont.signal })
       .then(res => {
         if (!res.ok) {
