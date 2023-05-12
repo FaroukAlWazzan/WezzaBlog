@@ -1,5 +1,6 @@
-/* the following for QuickSand font library */
+/* the following for QuickSand Google font library */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 
 /* base styles for all components */
 * {
@@ -14,7 +15,6 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  /* margin up and down 0 while right and left is auto */
   border-bottom: 1pxf solid #f2f2f2;
 }
 
